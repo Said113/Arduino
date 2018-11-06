@@ -14,7 +14,7 @@ position1=[]
 position2=[]
 position3=[]
 mydata=serial.Serial("com3",1200)
-plt.ion()
+plt.ion() #this method for run lib of matplotlib live
 
 def drwaing():
         plt.ylim(0,200) # here just put the min and the max 
