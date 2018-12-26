@@ -1,0 +1,29 @@
+//  Matrix
+//  Gourida Said (Said113)
+
+//rows
+int rowPins[8]={9,10,11,12,13,A0,A1,A2}; 
+//columns
+int colPins[8] = {1,2,3,4,5,6,7,8};
+
+void setup() {
+  // put your setup code here, to run once:
+    
+  for(int l=0;l<9;l++){
+    pinMode(rowPins[l],OUTPUT);
+    pinMode(colPins[l],OUTPUT);
+  }
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+  for(int l=0;l<8;l++){
+    digitalWrite(rowPins[l],HIGH);
+    for(int l=0;l<8;l++){
+      digitalWrite(colPins[l],LOW);
+  }
+    digitalWrite(rowPins[l],LOW);
+    delay(100);
+}
+}
