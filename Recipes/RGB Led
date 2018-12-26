@@ -1,0 +1,32 @@
+//  Gourida Said (Said113)
+
+int red=1;
+int blue=2;
+int green=3;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(red,OUTPUT);
+  pinMode(blue,OUTPUT);
+  pinMode(green,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  setcolor(255,0,0);
+  delay(1000);
+  setcolor(0,255,0);
+  delay(1000);
+  setcolor(0,0,255);
+  delay(1000);
+  setcolor(150,150,150);
+  delay(1000);
+  setcolor(19,222,39);
+  delay(1000);
+}
+
+void setcolor(int c1,int c2,int c3){
+  analogWrite(red,c1);
+  analogWrite(blue,c2);
+  analogWrite(green,c3);
+}
