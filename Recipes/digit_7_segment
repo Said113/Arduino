@@ -1,0 +1,100 @@
+//  Gourida Said(Said113)
+
+int pin1=0;
+int pin2=1;
+int pin3=2;
+int pin4=3;
+int pin5=4;
+int pin6=5;
+int pin7=6;
+int pin8=7;
+int pin9=8;
+
+
+void setup() {
+  for(int i=0;i<9;i++){
+    pinMode("pin"+i,OUTPUT);
+}
+}
+void loop() {
+////----------------------------0
+    for(int i=0;i<9;i++){
+        digitalWrite("pin"+i,HIGH);
+      }
+      digitalWrite(pin4,LOW);
+      digitalWrite(pin5,LOW);
+      digitalWrite(pin7,LOW);
+      delay(1000);
+////----------------------------1
+    for(int i=0;i<9;i++){
+        digitalWrite("pin"+i,LOW);
+      }
+      digitalWrite(pin1,HIGH);
+      digitalWrite(pin6,HIGH);
+      digitalWrite(pin5,HIGH);
+      digitalWrite(pin7,LOW);
+      delay(500);
+////----------------------------2
+    for(int i=0;i<9;i++){
+      digitalWrite("pin"+i,HIGH);
+    }
+      digitalWrite(pin7,LOW);
+      digitalWrite(pin3,LOW);
+      digitalWrite(pin6,LOW);
+      delay(500);
+////----------------------------3
+    for(int i=0;i<9;i++){
+      digitalWrite("pin"+i,HIGH);
+    }
+      digitalWrite(pin7,LOW);
+      digitalWrite(pin3,LOW);
+      digitalWrite(pin8,LOW);
+      delay(500);
+////----------------------------4
+    for(int i=0;i<9;i++){
+      digitalWrite("pin"+i,HIGH);
+    }
+      digitalWrite(pin7,LOW);
+      digitalWrite(pin2,LOW);
+      digitalWrite(pin8,LOW);
+      digitalWrite(pin9,LOW);
+      delay(500);
+////----------------------------5
+    for(int i=0;i<9;i++){
+      digitalWrite("pin"+i,HIGH);
+    }
+      digitalWrite(pin7,LOW);
+      digitalWrite(pin1,LOW);
+      digitalWrite(pin8,LOW);
+      delay(500);
+////----------------------------6
+    for(int i=0;i<9;i++){
+      digitalWrite("pin"+i,HIGH);
+    }
+      digitalWrite(pin7,LOW);
+      digitalWrite(pin1,LOW);
+      delay(500);
+////----------------------------7
+    for(int i=0;i<9;i++){
+      digitalWrite("pin"+i,HIGH);
+    }
+      digitalWrite(pin7,LOW);
+      digitalWrite(pin3,LOW);
+      digitalWrite(pin4,LOW);
+      digitalWrite(pin8,LOW);
+      digitalWrite(pin9,LOW);
+      delay(500);
+////----------------------------8
+    for(int i=0;i<9;i++){
+      digitalWrite("pin"+i,HIGH);
+    }
+      digitalWrite(pin7,LOW);
+      delay(500);
+////----------------------------9
+    for(int i=0;i<9;i++){
+      digitalWrite("pin"+i,HIGH);
+    }
+      digitalWrite(pin7,LOW);
+      digitalWrite(pin8,LOW);
+      delay(500);
+}
