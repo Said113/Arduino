@@ -1,0 +1,20 @@
+// Gourida Said(Said113)
+
+int btn = 7;  
+int led =  5;  
+int btnState = 0; // this will take the positions of the btn(pin7)
+
+void setup() {
+  pinMode(ledPin, OUTPUT);      
+  pinMode(buttonPin, INPUT);     
+}
+
+void loop(){
+  btnState = digitalRead(btn);
+  if (btnState == 1) {        
+    digitalWrite(led, HIGH); //this will turn LED on: 
+  } 
+  else{
+    digitalWrite(led, LOW);  //this will turn LED off:
+  }
+}
