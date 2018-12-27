@@ -11,6 +11,7 @@ void setup() {
 
 void loop(){
   btnState = digitalRead(btn); // is this situation we need to use the digitalread function to read the btn is on mean (1) or off is (0) 
+  // when you press the button the btnState will be 1 and vice versa
   if (btnState == 1) {        
     digitalWrite(led, HIGH); //this will turn LED on: 
   } 
