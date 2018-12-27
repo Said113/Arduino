@@ -8,7 +8,9 @@ int colPins[8] = {1,2,3,4,5,6,7,8};
 
 void setup() {
   // put your setup code here, to run once:
-    
+  // here if you want to want make just one row "ON" you can make this code before the for loop.
+  // rowpin=13;
+  // pinMode(rowpin,OUTPUT); ------> and don't forget to set this line of code to inside the setup function.
   for(int l=0;l<9;l++){
     pinMode(rowPins[l],OUTPUT);
     pinMode(colPins[l],OUTPUT);
@@ -17,13 +19,13 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
+  // when you set the row high you must set the column low to make the led "ON".
   for(int l=0;l<8;l++){
     digitalWrite(rowPins[l],HIGH);
     for(int l=0;l<8;l++){
-      digitalWrite(colPins[l],LOW);
+      digitalWrite(colPins[l],LOW); // here the LOW means thad the led is "ON". 
   }
-    digitalWrite(rowPins[l],LOW);
+    digitalWrite(rowPins[l],LOW); // this line means that row 1 is LOW (OFF) and set the row 2 is HIGH (ON)
     delay(100);
 }
 }
