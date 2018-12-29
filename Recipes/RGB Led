@@ -1,5 +1,6 @@
 //  Gourida Said (Said113)
-
+// just feel free to put any variable name here
+// RGB = R(Red) G(Green) B(Blue)
 int red=1;
 int blue=2;
 int green=3;
