@@ -25,7 +25,7 @@ void loop() {
   setcolor(19,222,39);
   delay(1000);
 }
-
+// here create new function and set the arguments of three colors(RGB)
 void setcolor(int c1,int c2,int c3){
   analogWrite(red,c1);
   analogWrite(blue,c2);
