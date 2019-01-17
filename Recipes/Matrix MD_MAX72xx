@@ -1,4 +1,5 @@
 // Said Gourida
+// Note that I've changed the hardware type from PAROLA_HW to FC_16.
 // Use the MD_MAX72XX library to scroll text on the display
 
 
@@ -13,8 +14,8 @@
 // Define the number of devices we have in the chain and the hardware interface
 // NOTE: These pin numbers will probably not work with your hardware and may
 // need to be adapted
-#define HARDWARE_TYPE MD_MAX72XX::FC16_HW 
-#define MAX_DEVICES 4
+#define HARDWARE_TYPE MD_MAX72XX::FC16_HW  //here from "PAROLA_HW" to "FC16_HW" 
+#define MAX_DEVICES 4 
 
 #define CLK_PIN   13  // or SCK
 #define DATA_PIN  11  // or MOSI
@@ -172,7 +173,7 @@ void setup()
   newMessage[0] = '\0';
 
   Serial.begin(57600);
-  Serial.print("\n[MD_MAX72XX Message Display]\nType a message for the scrolling display\nEnd message line with a newline");
+  Serial.print("\n[Code Club Djelfa]\nType a message for the scrolling display\nEnd message line with a newline");
 }
 
 void loop()
