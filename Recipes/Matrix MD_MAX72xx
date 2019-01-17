@@ -1,5 +1,5 @@
 // Said Gourida
-// Note that I've changed the hardware type from PAROLA_HW to FC_16.
+// Note that I've changed the hardware type from PAROLA_HW to FC16_HW.
 // Use the MD_MAX72XX library to scroll text on the display
 
 
