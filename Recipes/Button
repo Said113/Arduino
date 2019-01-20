@@ -2,7 +2,7 @@
 
 int btn = 7;  
 int led =  5;  
-int btnState = 0; // this will take the positions of the btn(pin7)
+int btnState = 0; // this will take the value of the btn(pin7)
 
 void setup() {
   pinMode(ledPin, OUTPUT);      
